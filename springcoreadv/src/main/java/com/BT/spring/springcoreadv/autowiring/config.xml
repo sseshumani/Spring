@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config></context:annotation-config>
+ 
+ 
+  <bean name="address" class="com.BT.spring.springcoreadv.autowiring.Address" p:hno="155" p:city="mysore"></bean>
+  
+   <bean name="address1" class="com.BT.spring.springcoreadv.autowiring.Address" p:hno="165" p:city="bangalore"></bean>
+     
+  <bean name="emp" class="com.BT.spring.springcoreadv.autowiring.Employee"/>   
+     
+ <!--  <bean name="emp" class="com.BT.spring.springcoreadv.autowiring.Employee" autowire="byType"/>  --> 
+   
+    <!--  <bean name="emp" class="com.BT.spring.springcoreadv.autowiring.Employee" autowire="byName"/> -->
+     
+    <!--   <bean name="emp" class="com.BT.spring.springcoreadv.autowiring.Employee" autowire="constructor"/> -->
+      
+  
+
+</beans>
