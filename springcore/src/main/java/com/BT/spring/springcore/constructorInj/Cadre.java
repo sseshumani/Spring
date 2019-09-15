@@ -14,12 +14,6 @@ public class Cadre {
 
 	private String cadre;
 
-	public String getCadre() {
-		return cadre;
-	}
-
-	public void setCadre(String cadre) {
-		this.cadre = cadre;
-	}
+	
 
 }

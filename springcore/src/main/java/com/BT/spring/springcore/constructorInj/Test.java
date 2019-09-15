@@ -1,6 +1,5 @@
 package com.BT.spring.springcore.constructorInj;
 
-import org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {

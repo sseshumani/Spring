@@ -22,7 +22,10 @@
      
     <bean name="cadre" class ="com.BT.spring.springcore.constructorInj.Cadre" c:cadre="IAS" />
      
-    <bean name="emp" class ="com.BT.spring.springcore.constructorInj.Employee" c:id="301">
+    <bean name="emp" class ="com.BT.spring.springcore.constructorInj.Employee">
+    <constructor-arg>
+    <value>122</value>
+    </constructor-arg>
     <constructor-arg>
     <value>"some name"</value>
     </constructor-arg>

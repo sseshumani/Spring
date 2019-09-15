@@ -1,5 +1,7 @@
 package com.BT.spring.springcore.constructorInj;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Employee {
 	
 	@Override
@@ -7,6 +9,7 @@ public class Employee {
 		return "Employee [id=" + id + ", name=" + name + ", cadre=" + cadre + "]";
 	}
 
+	
 	public Employee(int id, String name, Cadre cadre) {
 		super();
 		this.id = id;
@@ -15,29 +18,7 @@ public class Employee {
 	}
 
 	private int id;
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Cadre getCadre() {
-		return cadre;
-	}
-
-	public void setCadre(Cadre cadre) {
-		this.cadre = cadre;
-	}
+	
 
 	private String name;
 	

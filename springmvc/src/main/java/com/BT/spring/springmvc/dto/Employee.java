@@ -1,33 +1,32 @@
-package com.BT.spring.springcore;
-
-import org.springframework.beans.factory.annotation.Required;
+package com.BT.spring.springmvc.dto;
 
 public class Employee {
-
 	
 	private int id;
 	private String name;
-
+	private double salary;
 	public int getId() {
 		return id;
 	}
-
-	@Required
 	public void setId(int id) {
 		this.id = id;
 	}
-
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + "]";
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
 	}
 
+	
 }
